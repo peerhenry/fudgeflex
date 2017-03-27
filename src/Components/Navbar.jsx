@@ -1,8 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+const navItemStyle = {
+  lineHeight: '60px',
+  height: '60px',
+  paddingTop: 0,
+  fontSize: '24px',
+  fontWeight: 'bold'
+}
+
 const Navbar = ({}) => (
-  <nav class="navbar navbar-inverse" style={{marginBottom: 0}}>
+  <nav class="navbar navbar-inverse" style={{marginBottom: 0, borderRadius: 0}}>
 
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -12,7 +20,7 @@ const Navbar = ({}) => (
         <span class="icon-bar"></span>
       </button>
 
-      <Link class="navbar-brand" to="/">Home</Link>
+      <Link class="navbar-brand" to="/" style={navItemStyle}>Home</Link>
       
     </div>
 
@@ -20,11 +28,11 @@ const Navbar = ({}) => (
       <ul class="nav navbar-nav">
 
         <li class="">
-          <Link to="posters">Posters</Link>
+          <Link to="posters" style={navItemStyle}>Posters</Link>
         </li>
 
         <li class="">
-          <Link to="aanmelden">Aanmelden</Link>
+          <Link to="aanmelden" style={navItemStyle}>Aanmelden</Link>
         </li>
 
       </ul>
