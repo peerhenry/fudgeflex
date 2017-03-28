@@ -2,7 +2,8 @@ var express = require('express')
 var path = require('path')
 var app = express()
 
-var port = 3000
+// process.env.PORT lets the port be set by Heroku
+var port = process.env.PORT || 3000
 
 app.use(express.static(__dirname))
 
