@@ -12,11 +12,21 @@ const footerColor = {
   background: 'black'
 }
 
+const wrapperStyle = {
+  backgroundColor: lightRed,
+  //backgroundImage: 'url(img/a1.jpg)',
+  backgroundSize: '100%'
+}
+
+const mainStyle = {
+  backgroundColor: "rgba(253, 223, 166 , 0.85)",
+}
+
 const App = () => {
   return (
-  <div class="wrapper" style={{backgroundColor: lightRed}}>
+  <div class="wrapper" style={wrapperStyle}>
 
-    <div class="main">
+    <div class="main" style={mainStyle}>
       <div className="box">
         <HashRouter>
           <div>
