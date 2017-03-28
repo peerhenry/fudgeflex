@@ -7,9 +7,9 @@ import Posters from './Pages/Posters'
 import Register from './Pages/Register'
 import { lightRed } from './Colors'
 
-const footerColor = {
+const footerStyle = {
   color: 'white', 
-  background: 'black'
+  background: '#101010'
 }
 
 const wrapperStyle = {
@@ -41,9 +41,9 @@ const App = () => {
       </div>
     </div>
 
-    <div class="footer" style={footerColor}>
-      <div className="container">
-        <p class="text-muted footer">Bond Precaire Woonvormen</p>
+    <div class="footer" style={footerStyle}>
+      <div className="container" style={{padding: '10px'}}>
+        <p class="text-muted footer" >Bond Precaire Woonvormen</p>
       </div>
     </div>
 

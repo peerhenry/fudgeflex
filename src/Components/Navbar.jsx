@@ -28,7 +28,7 @@ const Navbar = ({}) => (
       <ul class="nav navbar-nav">
 
         <li class="">
-          <Link to="posters" style={navItemStyle}>Posters</Link>
+          <Link to="posters" style={navItemStyle}>PosterMaker</Link>
         </li>
 
         <li class="">

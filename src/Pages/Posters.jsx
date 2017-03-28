@@ -58,7 +58,7 @@ export default class Posters extends React.Component{
   updateSlogan(event){
     var c = document.getElementById("main-canvas");
     var ctx = renderCanvas(c);
-    var font  = '140pt Impact';
+    var font  = '120pt Impact';
     ctx.font = font;
     ctx.fillStyle="#ff0";
     ctx.textAlign = "center";
