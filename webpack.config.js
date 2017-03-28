@@ -1,4 +1,5 @@
 var webpack = require('webpack');
+var path = require('path');
 
 module.exports = {
 
@@ -12,7 +13,10 @@ module.exports = {
 
   resolve: {
     extensions: ['.webpack.js', '.web.js', '.js', '.jsx'],
-    alias: {}
+    alias: {
+      bootstrap: path.resolve(__dirname, 'src/Bootstrap'),
+      components: path.resolve(__dirname, 'src/Components')
+    }
   },
 
   module: {

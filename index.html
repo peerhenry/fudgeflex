@@ -16,14 +16,40 @@
   <script src="lib/reimg.js"></script>
 
   <title>Document</title>
+
+  <style>
+    html,
+    body, #app { height: 100%; }
+
+    body {
+      width: 100%;
+    }
+
+    .wrapper{
+      display: table;
+      height: 100%;
+      width: 100%;
+    }
+
+    .main{
+      height: 100%;
+      display: table;
+      width: 100%;
+    }
+
+    .footer {
+      display: table-row;
+      height: 1px;
+      width: 100%;
+    }
+
+    .box{
+      display: table-cell;
+    }
+  </style>
 </head>
 <body>
-  
   <div id="app"></div>
-
-  <footer class="container">
-    <p class="text-muted footer">Bond Precaire Woonvormen</p>
-  </footer>
   <script src="bundle.js"></script>
 </body>
 </html>

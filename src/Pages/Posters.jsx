@@ -27,7 +27,7 @@ export default class Posters extends React.Component{
     gr3.addColorStop(0,"purple");
     gr3.addColorStop(1,"pink");
 
-    ctx.fillStyle=gr2;
+    ctx.fillStyle=gr1;
     ctx.fillRect(0,0,imgW,imgH);
   }
 
